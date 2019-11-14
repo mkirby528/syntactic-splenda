@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>KirbyTweet</title>
+
+    <!-- Include links to CSS stylesheets below -->
+    <!-- TODO (optional): Add link to bulma here -->
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+  </head>
+
+  <body id="root">
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-weight-bold" href="#title">
+          <i class="fa fa-utensils" style="color:black;"></i>
+          <pre id="title">S Y N T A C T I C  S P L E N D A</pre>
+        </a>
+      </div>
+    </nav>
+    <div class="section">
+      <div class="container">
+        <div id="content-container" class="card-grid">
+          
+        </div>
+          
+      </div>
+    </div>
+    <!-- Include links to JavaScript files below -->
+    <!-- TODO: Add link to jQuery here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <script src="./secrets.js"></script>
+
+    <script src="./controller.js" type="module"></script>
+  </body>
+</html>

@@ -1,5 +1,6 @@
 import express from "express";
-
+import axios from "axios";
+import secrets from "../secrets";
 export const router = express.Router();
 export const prefix = '/';
 
@@ -13,4 +14,5 @@ router.get('/', function (req, res) {
     repo: 'https://github.com/cgburgess/comp426-backend'
   })
 });
+
 
