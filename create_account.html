@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>KirbyTweet</title>
+
+    <!-- Include links to CSS stylesheets below -->
+    <!-- TODO (optional): Add link to bulma here -->
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./login.css" />
+
+  </head>
+
+  <body id="root">
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns is-centered">
+              <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                <form action="" class="box">
+                    <h1 class="title has-text-centered">Create Account</h1>
+                    <hr>
+                    <div class="field">
+                            <label for="" class="label">Name</label>
+                            <div class="control has-icons-left">
+                              <input type="text" placeholder="e.g. Matthew Kirby" class="input" required>
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                              </span>
+                            </div>
+                          </div>
+                  <div class="field">
+                    <label for="" class="label">Email</label>
+                    <div class="control has-icons-left">
+                      <input type="email" placeholder="e.g. email@unc.com" class="input" required>
+                      <span class="icon is-small is-left">
+                        <i class="fa fa-envelope"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="" class="label">Password</label>
+                    <div class="control has-icons-left">
+                      <input type="password" placeholder="*******" class="input" required>
+                      <span class="icon is-small is-left">
+                        <i class="fa fa-lock"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <button class="button is-success">
+                      Create Account 
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Include links to JavaScript files below -->
+    <!-- TODO: Add link to jQuery here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+
+  </body>
+</html>
+
