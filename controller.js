@@ -1,7 +1,7 @@
 $(document).ready(() => {
   axios
     .get(
-      "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?number=100&query=burger",
+      "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?number=10&query=pasta",
       {
         crossDomain: true,
         headers: {

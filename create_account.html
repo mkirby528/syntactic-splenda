@@ -24,38 +24,38 @@
           <div class="container">
             <div class="columns is-centered">
               <div class="column is-5-tablet is-4-desktop is-3-widescreen">
-                <form action="" class="box">
+                <form id="create-form" action="" class="box">
                     <h1 class="title has-text-centered">Create Account</h1>
                     <hr>
                     <div class="field">
-                            <label for="" class="label">Name</label>
+                            <label for="name" class="label">Name</label>
                             <div class="control has-icons-left">
-                              <input type="text" placeholder="e.g. Matthew Kirby" class="input" required>
+                              <input id="name" type="text" placeholder="e.g. Matthew Kirby" class="input" required>
                               <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                               </span>
                             </div>
                           </div>
                   <div class="field">
-                    <label for="" class="label">Email</label>
+                    <label for="email" class="label">Email</label>
                     <div class="control has-icons-left">
-                      <input type="email" placeholder="e.g. email@unc.com" class="input" required>
+                      <input id="email" type="email" placeholder="e.g. email@unc.com" class="input" required>
                       <span class="icon is-small is-left">
                         <i class="fa fa-envelope"></i>
                       </span>
                     </div>
                   </div>
                   <div class="field">
-                    <label for="" class="label">Password</label>
+                    <label for="password" class="label">Password</label>
                     <div class="control has-icons-left">
-                      <input type="password" placeholder="*******" class="input" required>
+                      <input id="password" type="password" placeholder="*******" class="input" required>
                       <span class="icon is-small is-left">
                         <i class="fa fa-lock"></i>
                       </span>
                     </div>
                   </div>
                   <div class="field">
-                    <button class="button is-success">
+                    <button id="create-account-button"class="button is-success">
                       Create Account 
                     </button>
                   </div>
@@ -70,6 +70,7 @@
     <!-- TODO: Add link to jQuery here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./login.js" type="module"></script>
 
     <script
       defer
