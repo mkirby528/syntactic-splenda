@@ -23,6 +23,12 @@
       "data": {
         "email": "mkirby528@unc.edu"
       }
+    },
+    "test user": {
+      "passwordHash": "$2b$10$xgy1HKGGfqqziU/Hob4rq.vQ.FJ8OJZZYcgUokKu1Dpvj/h.fdqM6",
+      "data": {
+        "email": "testEmail@email.com"
+      }
     }
   }
 }
