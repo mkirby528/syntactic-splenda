@@ -3,7 +3,7 @@ html,body{
     height: 100%;
     scroll-behavior: smooth;
     overflow: auto;  
-    background-color:black;  
+    background-color:whitesmoke;  
     padding-top: 10px; 
 
 }
@@ -11,6 +11,14 @@ nav{
     max-height: 50px;
     margin: 0px;
     padding: 0px;
+}
+
+#search{
+    border: 3px solid grey;
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+    margin: auto 15px;
 }
 
 hr{
@@ -48,3 +56,6 @@ hr{
 #title{
     background: transparent;
 };
+.ui-helper-hidden-accessible {
+    display: none;
+}

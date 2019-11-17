@@ -4,18 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>KirbyTweet</title>
+    <title>Syntactic Splenda</title>
 
     <!-- Include links to CSS stylesheets below -->
     <!-- TODO (optional): Add link to bulma here -->
-    
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
     />
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-
   </head>
 
   <body id="root">
@@ -30,18 +29,32 @@
           <pre id="title">S Y N T A C T I C  S P L E N D A</pre>
         </a>
       </div>
+
+      <div class="field has-addons">
+        <div class="control has-icons-left">
+          <span class="icon is-small is-left">
+            <i class="fas fa-search"></i>
+          </span>
+          <input id="search-box" class="input" type="text" placeholder="Search for a recipe" />
+        </div>
+        <div class="control">
+          <a class="button is-info">
+            Search
+          </a>
+        </div>
+      </div>
     </nav>
     <div class="section">
       <div class="container">
-        <div id="content-container" class="card-grid">
-          
-        </div>
-          
+        <div id="content-container" class="card-grid"></div>
       </div>
     </div>
     <!-- Include links to JavaScript files below -->
     <!-- TODO: Add link to jQuery here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <script
