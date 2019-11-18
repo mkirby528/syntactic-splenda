@@ -1,33 +1,10 @@
 {
   "users": {
-    "matthew ": {
-      "passwordHash": "$2b$10$4KWgWBHjQ4XcZC5nqLLUu.XBc4LJ9F5BT/Af9Qkl2Mox7FXRH9PRC",
+    "mkirby528": {
+      "passwordHash": "$2b$10$mOiF4qlQRTYhLOC6z7BR.uoWQRYRbJoQDiHfgpruwwKt.i4jsava2",
       "data": {
+        "full_name": "Matthew",
         "email": "mkirby528@unc.edu"
-      }
-    },
-    "test ": {
-      "passwordHash": "$2b$10$1H8cC2CVH/OcMHe.3O5u8O1uNg.HL2D5YQznRuUUHV0HrqDwaxiZ.",
-      "data": {
-        "email": "mkirby528@unc.edu"
-      }
-    },
-    "asdsad": {
-      "passwordHash": "$2b$10$PHU5YRnTvBN4VFEeqzT4RutNHvzs93qv530bodUWNL0I79QBFVQiq",
-      "data": {
-        "email": "a@a.com"
-      }
-    },
-    "matthew2": {
-      "passwordHash": "$2b$10$opGNPWHjSuqUZAikST/xr.vd34zevOes0Gh/nC.poYppr1Hj6n5EC",
-      "data": {
-        "email": "mkirby528@unc.edu"
-      }
-    },
-    "test user": {
-      "passwordHash": "$2b$10$xgy1HKGGfqqziU/Hob4rq.vQ.FJ8OJZZYcgUokKu1Dpvj/h.fdqM6",
-      "data": {
-        "email": "testEmail@email.com"
       }
     }
   }

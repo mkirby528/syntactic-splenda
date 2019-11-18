@@ -78,9 +78,6 @@ let makeRecipeCard = async recipe => {
  `;
 };
 
-
-
-
  $('#search-box').autocomplete({
   source: function( request, respond ) {
    let term = request.term;
@@ -108,3 +105,4 @@ let makeRecipeCard = async recipe => {
   minLength: 3,
   delay: 200
 });
+

@@ -22,6 +22,7 @@ body {
 }
 
 .navbar {
+    display: inline-flex;
     color:white;
 }
 
@@ -62,7 +63,12 @@ hr {
   max-height: 12em;
   line-height: 1.2em;
 }
-
+#user-info-div{
+    margin: 15px;
+    margin-left: auto;
+    margin-top: auto;
+    float: right;
+}
 #title {
   background: transparent;
   color:white;
