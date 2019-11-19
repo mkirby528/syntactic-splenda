@@ -5,7 +5,10 @@ $(document).ready(() => {
     .get("http://localhost:3000/account/status", {
       headers: { Authorization: `Bearer ${tokenStr}` }
     })
-    .then(res => console.log(res))
+    .then(res =>{
+      console.log(res)
+      $("#user-name-text").text(res.data.user.data.full_name);
+    })
     .catch(err => console.log(err));
 
   // axios

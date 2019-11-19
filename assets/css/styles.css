@@ -1,6 +1,5 @@
 html,
 body {
-
   width: 100%;
   height: 100%;
   scroll-behavior: smooth;
@@ -22,16 +21,21 @@ body {
 }
 
 .navbar {
-    display: inline-flex;
-    color:white;
+  display: inline-flex;
+  color: white;
 }
 
 .search-field {
+  max-width: 50%;
+  min-width: 50%;
   border-radius: 5px;
-    margin: auto 15px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-
-
+.search-control, .search-control > *{
+  width: 100%;
+}
 hr {
   height: 5px;
   border: 1;
@@ -63,15 +67,22 @@ hr {
   max-height: 12em;
   line-height: 1.2em;
 }
-#user-info-div{
-    margin: 15px;
-    margin-left: auto;
-    margin-top: auto;
-    float: right;
+#user-info-div {
+  display: inline-flex;
+  margin: 15px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: right;
+}
+#user-info-div > * {
+  font-size: 150%;
+  margin: auto;
+  margin-right: 5px;
 }
 #title {
   background: transparent;
-  color:white;
+  color: white;
 }
 .ui-helper-hidden-accessible {
   display: none;

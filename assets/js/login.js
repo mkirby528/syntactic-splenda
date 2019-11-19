@@ -41,7 +41,7 @@ $(document).ready(() => {
       console.log(res);
       document.cookie = res.data.jwt;
 
-      // window.location.href="/";
+      window.location.href="/";
     }
     ).catch(err=>console.log(err));
     
