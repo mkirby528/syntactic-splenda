@@ -6,6 +6,13 @@
         "full_name": "Matthew",
         "email": "mkirby528@unc.edu"
       }
+    },
+    "kirby": {
+      "passwordHash": "$2b$10$N6m/Or/iGg3P2XWlSVnAfu5FGivtM8HmeJtSeaEEqpKI8fAKX79q6",
+      "data": {
+        "full_name": "k",
+        "email": "testE@a.com"
+      }
     }
   }
 }

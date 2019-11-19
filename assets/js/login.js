@@ -39,7 +39,9 @@ $(document).ready(() => {
           }
     ).then(res=>{
       console.log(res);
-      window.location.href="/";
+      document.cookie = res.data.jwt;
+
+      // window.location.href="/";
     }
     ).catch(err=>console.log(err));
     

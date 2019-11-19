@@ -1,6 +1,12 @@
-
 $(document).ready(() => {
-
+  let tokenStr = document.cookie;
+  console.log(tokenStr);
+  axios
+    .get("http://localhost:3000/account/status", {
+      headers: { Authorization: `Bearer ${tokenStr}` }
+    })
+    .then(res => console.log(res))
+    .catch(err => console.log(err));
 
   // axios
   //   .get(
@@ -78,31 +84,33 @@ let makeRecipeCard = async recipe => {
  `;
 };
 
- $('#search-box').autocomplete({
-  source: function( request, respond ) {
-   let term = request.term;
-   axios({
-    "method":"GET",
-    "url":"https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/autocomplete",
-    "headers":{
-    "content-type":"application/octet-stream",
-    "x-rapidapi-host":"spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-    "x-rapidapi-key":"50988491b3msh7a08c92fbf682e9p1e06dejsne4fc3e213269"
-    },"params":{
-    "number":"5",
-    "query": term 
-    }
+$("#search-box").autocomplete({
+  source: function(request, respond) {
+    let term = request.term;
+    axios({
+      method: "GET",
+      url:
+        "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/autocomplete",
+      headers: {
+        "content-type": "application/octet-stream",
+        "x-rapidapi-host":
+          "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+        "x-rapidapi-key": "50988491b3msh7a08c92fbf682e9p1e06dejsne4fc3e213269"
+      },
+      params: {
+        number: "5",
+        query: term
+      }
     })
-    .then((res)=>{
-      let results = res.data.map(x=>x.title);
-      respond(results);
-    })
-    .catch((error)=>{
-      console.log(error)
-    })
+      .then(res => {
+        let results = res.data.map(x => x.title);
+        respond(results);
+      })
+      .catch(error => {
+        console.log(error);
+      });
   },
-  
+
   minLength: 3,
   delay: 200
 });
-
