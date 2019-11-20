@@ -68,6 +68,7 @@ hr {
   line-height: 1.2em;
 }
 #user-info-div {
+  height: 100%;
   display: inline-flex;
   margin: 15px;
   margin-left: auto;
@@ -80,6 +81,17 @@ hr {
   margin: auto;
   margin-right: 5px;
 }
+
+#login-button{
+  background-color: var(--color4);
+  height: 30px;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
 #title {
   background: transparent;
   color: white;
