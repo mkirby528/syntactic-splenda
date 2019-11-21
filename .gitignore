@@ -1,5 +1,4 @@
 node_modules/
 .idea/*
 .env
-
-\assets\js\secrets.js
+assets\js\secrets.js
