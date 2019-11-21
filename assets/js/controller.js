@@ -17,7 +17,7 @@ $(document).ready(() => {
             class:"button is-small",
             id:"login-button",
             text: 'Login',
-            click: function () { window.location.href="/login.html?t=all" }
+            click: function () { window.location.href="/login.html?q=search" }
         }));
 
       }

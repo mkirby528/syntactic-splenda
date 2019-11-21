@@ -1,6 +1,8 @@
 
 $(document).ready(() => {
-  
+  const urlParams = new URLSearchParams(window.location.search);
+const myParam = urlParams.get('q')
+alert(myParam)
   $("#create-form").on("submit",function(e) {
     e.preventDefault();
     let name = ($('#name').val());

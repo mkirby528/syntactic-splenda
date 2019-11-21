@@ -13,6 +13,13 @@
         "full_name": "k",
         "email": "testE@a.com"
       }
+    },
+    "abc123": {
+      "passwordHash": "$2b$10$Tdobol3QhmExCOJ1atoXV.4MXENC0UdnwIQhUEzV8iYI9n5npKy.G",
+      "data": {
+        "full_name": "ABC ",
+        "email": "abc@email.com"
+      }
     }
   }
 }
