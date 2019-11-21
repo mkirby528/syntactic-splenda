@@ -48,14 +48,25 @@ hr {
 }
 
 .card {
-  background-color: lightskyblue;
+  background-color: var(--color5);
+  margin: auto;
+
   padding: 10px;
-  margin-bottom: 20px;
-  max-width: 40%;
+  margin: 20px;
+  max-width: 100%;
   overflow: auto;
   border: 1px solid #d3d3d3;
   border-radius: 0.25rem;
 }
+
+.card-grid{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30%);
+  justify-content: space-evenly;
+}
+  
+
 .max-lines {
   display: -webkit-box;
   -webkit-line-clamp: 8;

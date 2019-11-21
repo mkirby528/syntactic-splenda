@@ -1,6 +1,6 @@
 
 $(document).ready(() => {
-
+  
   $("#create-form").on("submit",function(e) {
     e.preventDefault();
     let name = ($('#name').val());
