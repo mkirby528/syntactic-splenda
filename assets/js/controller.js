@@ -17,7 +17,7 @@ $(document).ready(() => {
             class:"button is-small",
             id:"login-button",
             text: 'Login',
-            click: function () { window.location.href="/login.html?q=search" }
+            click: function () { window.location.href="/login.html" }
         }));
 
       }
@@ -110,7 +110,7 @@ $("#search-box").autocomplete({
         "content-type": "application/octet-stream",
         "x-rapidapi-host":
           "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-        "x-rapidapi-key": "50988491b3msh7a08c92fbf682e9p1e06dejsne4fc3e213269"
+        "x-rapidapi-key": CONFIG.API_KEY
       },
       params: {
         number: "5",
