@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Syntactic Splenda</title>
+
+    <!-- Include links to CSS stylesheets below -->
+    <!-- TODO (optional): Add link to bulma here -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <link 
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/search.css" />
+
+  </head>
+
+  <body id="root">
+
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-weight-bold" href="/">
+          <i class="fa fa-utensils has-text-white" ></i>
+          <pre id="title">S Y N T A C T I C  S P L E N D A</pre>
+        </a>
+      </div>
+
+      <div class="search-field field has-addons">
+        <div class="search-control control">
+        
+          <input id="search-box" class="input" type="text" placeholder="Search for a recipe" />
+        </div>
+        <div class="control">
+          <a id="search-button" class="button is-info">
+            Search
+          </a>
+        </div>
+      </div>
+      <div id="user-info-div">
+        <i class="fas fa-user"></i>
+        <p id="user-name-text"></p>
+      </div>
+    </nav>
+    <div class="section">
+      
+        <div class="container recipe-page">
+          <div id="search-info-div" class="has-text-centered"><h1 class="title has-text" id="recipe-title">Recipe Title</h2></div>
+            <div class="section columns">
+                <div class="column is-one-quarter has-text-centered">
+                        <figure class="image recipe-img">
+                                <img id="recipe-img" src="">
+                              </figure>
+                </div>
+                <div class="column has-text-centered recipe-description-div ">
+                    <h1 class="subtitle is-marginless" style="padding-right:10%;">Description<hr style="width:50%; margin:auto"></h1>
+                    <p id="recipe-description"class="recipe-description">
+                </p></div>
+            </div>
+            <div class="section is-paddingless ">
+                <div class="container" style="width: 75%;">
+                <h1 class="title is-marginless has-text-centered">Instructions<hr width="50%"style="margin:auto;" ></h1>
+                <div id="recipe-instructions"></div>
+            </div>
+            </div>
+            <div class="section ">
+                    <div class="container" style="width: 75%;">
+                            <h1 class="title is-marginless has-text-centered">Similar Recipies<hr width="50%"style="margin:auto;" ></h1>
+                            <div style="width: 100%;" id="similar-recipes"class="card-grid"></div>
+                    </div>
+
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Include links to JavaScript files below -->
+    <!-- TODO: Add link to jQuery here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+   
+    <script src="/assets/js/secrets.js"></script>
+    <script src="assets/js/navbar_controller.js" type="module"></script>
+
+    <script src="assets/js/recipe_controller.js" type="module"></script>
+  </body>
+</html>

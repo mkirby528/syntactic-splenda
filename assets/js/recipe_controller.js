@@ -1,11 +1,9 @@
-$(document).ready(() => {
+$(document).ready(async () => {
   const urlParams = new URLSearchParams(window.location.search);
-  const query = urlParams.get("q");
-  $("#search-info").text($("#search-info").text() + query);
-
-  axios
+  const id = urlParams.get("id");
+  let recipe = await axios
     .get(
-      `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?number=2&query=${query}`,
+      `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${id}/information`,
       {
         crossDomain: true,
         headers: {
@@ -16,17 +14,74 @@ $(document).ready(() => {
       }
     )
     .then(res => {
-      for (let i = 0; i < res.data.results.length; i++) {
-        let recipe = res.data.results[i];
-
-        let card = makeRecipeCard(recipe);
-
-        $("#search-results").append(card);
-      }
+      return res.data;
     });
+  let summary = await axios
+    .get(
+      `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${id}/summary`,
+      {
+        crossDomain: true,
+        headers: {
+          "x-rapidapi-host":
+            "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+          "x-rapidapi-key": CONFIG.API_KEY
+        }
+      }
+    )
+    .then(res => {
+      return res.data.summary;
+    });
+
+    let similar =  await axios
+    .get(
+      `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${id}/similar`,
+      {
+        crossDomain: true,
+        headers: {
+          "x-rapidapi-host":
+            "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+          "x-rapidapi-key": CONFIG.API_KEY
+        }
+      }
+    )
+    .then(res => {
+      return res.data;
+    });
+    console.dir(recipe)
+    console.dir(summary);
+    console.dir(similar);
+
+
+
+    $("#recipe-title").text(recipe.title);
+
+    $("#recipe-description").html(`<p>${summary}</p`)
+    $("#recipe-img").attr("src",`${recipe.image}`);
+    
+
+    var $ol = $('<ol>');
+
+    for(let i = 0;i< recipe.analyzedInstructions[0].steps.length; i++){
+        var $li = $('<li>').text(recipe.analyzedInstructions[0].steps[i].step);
+        $ol.append($li);
+    }
+    $('#recipe-instructions').append($ol);
+    
+    for(let i = 0; i  < 3; i++){
+      console.log(similar[i]);
+      let card = makeRecipeCard(similar[i]);
+      console.log(card)
+      $('#similar-recipes').append($(card));
+    }
+
+
+
+
 });
 
-let makeRecipeCard = recipe => {
+
+let makeRecipeCard =  recipe => {
+
   return `
   <div id="${recipe.id}-card" class="card">
   <div class="card-image">
@@ -43,13 +98,15 @@ let makeRecipeCard = recipe => {
     </div>
 
   </div>
-  <div class="card-footer columns is-centered ">
+  <div class="card-footer columns is-centered has-text-centered">
       <a class="favorite-button button ">Add To Favorites</a>
       <a class="view-button button is-info ">View Recipe</a>
+</div>
   </div>
  </div>
  `;
 };
+
 
 let handleFavoriteButton = e => {
   let card_id = $(e.target)

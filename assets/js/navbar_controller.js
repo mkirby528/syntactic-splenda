@@ -1,12 +1,10 @@
 $(document).ready(() => {
     let tokenStr = document.cookie;
-    console.log(tokenStr);
     axios
       .get("http://localhost:3000/account/status", {
         headers: { Authorization: `Bearer ${tokenStr}` }
       })
       .then(res => {
-        console.log(res);
         $("#user-name-text").text(res.data.user.data.full_name);
       })
       .catch(err => {
@@ -53,7 +51,6 @@ $("#search-box").autocomplete({
           respond(results);
         })
         .catch(error => {
-          console.log(error);
         });
     },
   
