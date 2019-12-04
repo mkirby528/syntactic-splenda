@@ -1,4 +1,3 @@
-$(document).ready(() => {});
 
 let handleFavoriteButton = async e => {
   let card_id = $(e.target)
@@ -16,7 +15,7 @@ let handleFavoriteButton = async e => {
       });
     } else {
       $(e.target).addClass("liked");
-      $(e.target).text("Remove From Favorites");
+      $(e.target).text("Remove Favorite");
 
       let recipe = await axios
         .get(
@@ -65,7 +64,7 @@ let handleViewButton = e => {
 $(document).on("click", ".favorite-button", handleFavoriteButton);
 $(document).on("click", ".view-button", handleViewButton);
 
-let makeRecipeCard = async recipe => {
+let makeRecipeCard =  async recipe => {
   let tokenStr = document.cookie;
   let likeStr = "";
   let card = await axios
@@ -91,7 +90,7 @@ let makeRecipeCard = async recipe => {
      
        </div>
        <div class="card-footer columns is-centered has-text-centered">
-           <a id="${recipe.id}-favButton" class="favorite-button ${likeStr} button ">Remove From Favorites</a>
+           <a id="${recipe.id}-favButton" class="favorite-button ${likeStr} button ">Remove Favorite</a>
            <a class="view-button button is-info ">View Recipe</a>
      </div>
        </div>
@@ -117,7 +116,7 @@ let makeRecipeCard = async recipe => {
      
        </div>
        <div class="card-footer columns is-centered has-text-centered">
-           <a id="${recipe.id}-favButton" class="favorite-button ${likeStr} button ">Add to Favorites</a>
+           <a id="${recipe.id}-favButton" class="favorite-button ${likeStr} button ">Add  Favorites</a>
            <a class="view-button button is-info ">View Recipe</a>
      </div>
        </div>

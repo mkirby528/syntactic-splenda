@@ -69,7 +69,7 @@ $(document).ready(async () => {
     
     for(let i = 0; i  < 3; i++){
       console.log(similar[i]);
-      let card = makeRecipeCard(similar[i]);
+      let card = await makeRecipeCard(similar[i]);
       console.log(card)
       $('#similar-recipes').append($(card));
     }

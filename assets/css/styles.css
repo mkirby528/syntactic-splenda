@@ -80,6 +80,9 @@ hr {
   width: 48%;
   font-size: .85em;
   font-weight: bold;
+  white-space: normal;
+  word-wrap: break-word;
+
 }
 
 .favorite-button.liked {

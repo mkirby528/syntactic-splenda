@@ -1,6 +1,434 @@
 {
   "mkirby528": {
     "fav": {
+      "287117": {
+        "id": 287117,
+        "title": "Hottest Wings",
+        "image": "https://spoonacular.com/recipeImages/287117-556x370.jpeg",
+        "analyzedInstructions": [
+          {
+            "name": "",
+            "steps": [
+              {
+                "number": 1,
+                "step": "In blender, puree all ingredients, being very careful of the hot peppers.",
+                "ingredients": [],
+                "equipment": [
+                  {
+                    "id": 404726,
+                    "name": "blender",
+                    "image": "blender.png"
+                  }
+                ]
+              },
+              {
+                "number": 2,
+                "step": "Place chicken wings in a bowl and pour mixture on top, marinate wings overnight.",
+                "ingredients": [
+                  {
+                    "id": 5100,
+                    "name": "chicken wings",
+                    "image": "chicken-wings.png"
+                  }
+                ],
+                "equipment": [
+                  {
+                    "id": 404783,
+                    "name": "bowl",
+                    "image": "bowl.jpg"
+                  }
+                ]
+              },
+              {
+                "number": 3,
+                "step": "Heat Dutch oven with fry oil at 350 degrees F.",
+                "ingredients": [],
+                "equipment": [
+                  {
+                    "id": 404667,
+                    "name": "dutch oven",
+                    "image": "dutch-oven.jpg"
+                  }
+                ]
+              },
+              {
+                "number": 4,
+                "step": "Remove wings from bowl and gently place them in the hot oil. Fry wings until golden brown and crisp about 8 to10 minutes. Meanwhile, take the leftover marinade and place in a small saucepan on stove and bring to a hard boil. After the sauce is heated throughout, put sauce in large bowl, add wings and toss until coated.",
+                "ingredients": [
+                  {
+                    "id": 5100,
+                    "name": "chicken wings",
+                    "image": "chicken-wings.png"
+                  }
+                ],
+                "equipment": [
+                  {
+                    "id": 404669,
+                    "name": "sauce pan",
+                    "image": "sauce-pan.jpg"
+                  },
+                  {
+                    "id": 404794,
+                    "name": "stove",
+                    "image": "oven.jpg"
+                  },
+                  {
+                    "id": 404783,
+                    "name": "bowl",
+                    "image": "bowl.jpg"
+                  }
+                ],
+                "length": {
+                  "number": 10,
+                  "unit": "minutes"
+                }
+              }
+            ]
+          }
+        ],
+        "extendedIngredients": [
+          {
+            "id": 14003,
+            "aisle": "Alcoholic Beverages",
+            "image": "beer.jpg",
+            "consitency": "liquid",
+            "name": "beer",
+            "original": "1 bottle beer",
+            "originalString": "1 bottle beer",
+            "originalName": "beer",
+            "amount": 1,
+            "unit": "bottle",
+            "meta": [],
+            "metaInformation": [],
+            "measures": {
+              "us": {
+                "amount": 1,
+                "unitShort": "bottle",
+                "unitLong": "bottle"
+              },
+              "metric": {
+                "amount": 1,
+                "unitShort": "bottle",
+                "unitLong": "bottle"
+              }
+            }
+          },
+          {
+            "id": 2031,
+            "aisle": "Spices and Seasonings",
+            "image": "chili-powder.jpg",
+            "consitency": "solid",
+            "name": "cayenne pepper",
+            "original": "4 tablespoons cayenne pepper",
+            "originalString": "4 tablespoons cayenne pepper",
+            "originalName": "cayenne pepper",
+            "amount": 4,
+            "unit": "tablespoons",
+            "meta": [],
+            "metaInformation": [],
+            "measures": {
+              "us": {
+                "amount": 4,
+                "unitShort": "Tbsps",
+                "unitLong": "Tbsps"
+              },
+              "metric": {
+                "amount": 4,
+                "unitShort": "Tbsps",
+                "unitLong": "Tbsps"
+              }
+            }
+          },
+          {
+            "id": 5100,
+            "aisle": "Meat",
+            "image": "chicken-wings.png",
+            "consitency": "solid",
+            "name": "chicken wings",
+            "original": "3 pounds chicken wings, tips removed if desired",
+            "originalString": "3 pounds chicken wings, tips removed if desired",
+            "originalName": "chicken wings, tips removed if desired",
+            "amount": 3,
+            "unit": "pounds",
+            "meta": [],
+            "metaInformation": [],
+            "measures": {
+              "us": {
+                "amount": 3,
+                "unitShort": "lb",
+                "unitLong": "pounds"
+              },
+              "metric": {
+                "amount": 1.361,
+                "unitShort": "kilogram",
+                "unitLong": "kilograms"
+              }
+            }
+          },
+          {
+            "id": 1002030,
+            "aisle": "Spices and Seasonings",
+            "image": "pepper.jpg",
+            "consitency": "solid",
+            "name": "ground pepper",
+            "original": "1 tablespoon ground black pepper",
+            "originalString": "1 tablespoon ground black pepper",
+            "originalName": "ground black pepper",
+            "amount": 1,
+            "unit": "tablespoon",
+            "meta": [
+              "black"
+            ],
+            "metaInformation": [
+              "black"
+            ],
+            "measures": {
+              "us": {
+                "amount": 1,
+                "unitShort": "Tbsp",
+                "unitLong": "Tbsp"
+              },
+              "metric": {
+                "amount": 1,
+                "unitShort": "Tbsp",
+                "unitLong": "Tbsp"
+              }
+            }
+          },
+          {
+            "id": 6168,
+            "aisle": "Condiments",
+            "image": "hot-sauce-or-tabasco.png",
+            "consitency": "liquid",
+            "name": "hot sauce",
+            "original": "1 small bottle hot sauce (recommended: Tabasco)",
+            "originalString": "1 small bottle hot sauce (recommended: Tabasco)",
+            "originalName": "hot sauce (recommended: Tabasco)",
+            "amount": 1,
+            "unit": "small bottle",
+            "meta": [
+              "(recommended: Tabasco)"
+            ],
+            "metaInformation": [
+              "(recommended: Tabasco)"
+            ],
+            "measures": {
+              "us": {
+                "amount": 1,
+                "unitShort": "small bottle",
+                "unitLong": "small bottle"
+              },
+              "metric": {
+                "amount": 1,
+                "unitShort": "small bottle",
+                "unitLong": "small bottle"
+              }
+            }
+          },
+          {
+            "id": 11979,
+            "aisle": "Canned and Jarred;Produce;Ethnic Foods",
+            "image": "jalapeno-pepper.png",
+            "consitency": "solid",
+            "name": "jalapeno peppers",
+            "original": "10 whole jalapeno peppers",
+            "originalString": "10 whole jalapeno peppers",
+            "originalName": "whole jalapeno peppers",
+            "amount": 10,
+            "unit": "",
+            "meta": [
+              "whole"
+            ],
+            "metaInformation": [
+              "whole"
+            ],
+            "measures": {
+              "us": {
+                "amount": 10,
+                "unitShort": "",
+                "unitLong": ""
+              },
+              "metric": {
+                "amount": 10,
+                "unitShort": "",
+                "unitLong": ""
+              }
+            }
+          },
+          {
+            "id": 6168,
+            "aisle": "Condiments",
+            "image": "hot-sauce-or-tabasco.png",
+            "consitency": "liquid",
+            "name": "pepper sauce",
+            "original": "1 cup sriracha hot pepper sauce",
+            "originalString": "1 cup sriracha hot pepper sauce",
+            "originalName": "sriracha hot pepper sauce",
+            "amount": 1,
+            "unit": "cup",
+            "meta": [
+              "hot"
+            ],
+            "metaInformation": [
+              "hot"
+            ],
+            "measures": {
+              "us": {
+                "amount": 1,
+                "unitShort": "cup",
+                "unitLong": "cup"
+              },
+              "metric": {
+                "amount": 236.588,
+                "unitShort": "ml",
+                "unitLong": "milliliters"
+              }
+            }
+          },
+          {
+            "id": 11821,
+            "aisle": "Produce",
+            "image": "red-pepper.jpg",
+            "consitency": "solid",
+            "name": "red bell pepper",
+            "original": "1 red bell pepper",
+            "originalString": "1 red bell pepper",
+            "originalName": "red bell pepper",
+            "amount": 1,
+            "unit": "",
+            "meta": [
+              "red"
+            ],
+            "metaInformation": [
+              "red"
+            ],
+            "measures": {
+              "us": {
+                "amount": 1,
+                "unitShort": "",
+                "unitLong": ""
+              },
+              "metric": {
+                "amount": 1,
+                "unitShort": "",
+                "unitLong": ""
+              }
+            }
+          },
+          {
+            "id": 1022068,
+            "aisle": "Oil, Vinegar, Salad Dressing",
+            "image": "red-wine-vinegar.jpg",
+            "consitency": "liquid",
+            "name": "red wine vinegar",
+            "original": "1/2 cup red wine vinegar",
+            "originalString": "1/2 cup red wine vinegar",
+            "originalName": "red wine vinegar",
+            "amount": 0.5,
+            "unit": "cup",
+            "meta": [
+              "red"
+            ],
+            "metaInformation": [
+              "red"
+            ],
+            "measures": {
+              "us": {
+                "amount": 0.5,
+                "unitShort": "cups",
+                "unitLong": "cups"
+              },
+              "metric": {
+                "amount": 118.294,
+                "unitShort": "ml",
+                "unitLong": "milliliters"
+              }
+            }
+          },
+          {
+            "id": 2047,
+            "aisle": "Spices and Seasonings",
+            "image": "salt.jpg",
+            "consitency": "solid",
+            "name": "salt",
+            "original": "1 tablespoon salt",
+            "originalString": "1 tablespoon salt",
+            "originalName": "salt",
+            "amount": 1,
+            "unit": "tablespoon",
+            "meta": [],
+            "metaInformation": [],
+            "measures": {
+              "us": {
+                "amount": 1,
+                "unitShort": "Tbsp",
+                "unitLong": "Tbsp"
+              },
+              "metric": {
+                "amount": 1,
+                "unitShort": "Tbsp",
+                "unitLong": "Tbsp"
+              }
+            }
+          },
+          {
+            "id": 11977,
+            "aisle": "Produce",
+            "image": "serrano-pepper.jpg",
+            "consitency": "solid",
+            "name": "serrano chili peppers",
+            "original": "6 whole serrano chili peppers",
+            "originalString": "6 whole serrano chili peppers",
+            "originalName": "whole serrano chili peppers",
+            "amount": 6,
+            "unit": "",
+            "meta": [
+              "whole"
+            ],
+            "metaInformation": [
+              "whole"
+            ],
+            "measures": {
+              "us": {
+                "amount": 6,
+                "unitShort": "",
+                "unitLong": ""
+              },
+              "metric": {
+                "amount": 6,
+                "unitShort": "",
+                "unitLong": ""
+              }
+            }
+          },
+          {
+            "id": 6971,
+            "aisle": "Condiments",
+            "image": "dark-sauce.jpg",
+            "consitency": "liquid",
+            "name": "worcestershire sauce",
+            "original": "1/2 bottle Worcestershire sauce",
+            "originalString": "1/2 bottle Worcestershire sauce",
+            "originalName": "Worcestershire sauce",
+            "amount": 0.5,
+            "unit": "bottle",
+            "meta": [],
+            "metaInformation": [],
+            "measures": {
+              "us": {
+                "amount": 0.5,
+                "unitShort": "bottle",
+                "unitLong": "bottles"
+              },
+              "metric": {
+                "amount": 0.5,
+                "unitShort": "bottle",
+                "unitLong": "bottles"
+              }
+            }
+          }
+        ]
+      },
       "492686": {
         "id": 492686,
         "title": "Blueberry Pie with Lemon Sauce",
@@ -1026,6 +1454,344 @@
                 "amount": 1,
                 "unitShort": "tsp",
                 "unitLong": "teaspoon"
+              }
+            }
+          }
+        ]
+      },
+      "493641": {
+        "id": 493641,
+        "title": "Contest-Winning Strawberry Chicken Salad",
+        "image": "https://spoonacular.com/recipeImages/493641-556x370.jpg",
+        "analyzedInstructions": [
+          {
+            "name": "",
+            "steps": [
+              {
+                "number": 1,
+                "step": "Place salad greens in a large shallow bowl. In rows, arrange the onion, pineapple, chicken, tomatoes, cucumber and strawberries. Sprinkle with blue cheese.",
+                "ingredients": [
+                  {
+                    "id": 21052,
+                    "name": "greens",
+                    "image": "mixed-greens-or-mesclun.jpg"
+                  },
+                  {
+                    "id": 9316,
+                    "name": "strawberries",
+                    "image": "strawberries.png"
+                  },
+                  {
+                    "id": 1004,
+                    "name": "blue cheese",
+                    "image": "blue-cheese.png"
+                  },
+                  {
+                    "id": 9266,
+                    "name": "pineapple",
+                    "image": "pineapple.jpg"
+                  },
+                  {
+                    "id": 11206,
+                    "name": "cucumber",
+                    "image": "cucumber.jpg"
+                  },
+                  {
+                    "id": 11529,
+                    "name": "tomato",
+                    "image": "tomato.png"
+                  },
+                  {
+                    "id": 11282,
+                    "name": "onion",
+                    "image": "brown-onion.png"
+                  }
+                ],
+                "equipment": [
+                  {
+                    "id": 404783,
+                    "name": "bowl",
+                    "image": "bowl.jpg"
+                  }
+                ]
+              },
+              {
+                "number": 2,
+                "step": "Drizzle with vinaigrette.",
+                "ingredients": [],
+                "equipment": []
+              }
+            ]
+          }
+        ],
+        "extendedIngredients": [
+          {
+            "id": 1004,
+            "aisle": "Cheese",
+            "image": "blue-cheese.png",
+            "consitency": "solid",
+            "name": "blue cheese",
+            "original": "3/4 cup crumbled blue cheese",
+            "originalString": "3/4 cup crumbled blue cheese",
+            "originalName": "crumbled blue cheese",
+            "amount": 0.75,
+            "unit": "cup",
+            "meta": [
+              "blue",
+              "crumbled"
+            ],
+            "metaInformation": [
+              "blue",
+              "crumbled"
+            ],
+            "measures": {
+              "us": {
+                "amount": 0.75,
+                "unitShort": "cups",
+                "unitLong": "cups"
+              },
+              "metric": {
+                "amount": 177.441,
+                "unitShort": "ml",
+                "unitLong": "milliliters"
+              }
+            }
+          },
+          {
+            "id": 5062,
+            "aisle": "Meat",
+            "image": "chicken-breasts.png",
+            "consitency": "solid",
+            "name": "chicken breast",
+            "original": "2 packages (6 ounces each) ready-to-use grilled chicken breast strips",
+            "originalString": "2 packages (6 ounces each) ready-to-use grilled chicken breast strips",
+            "originalName": "packages each) ready-to-use grilled chicken breast strips",
+            "amount": 12,
+            "unit": "ounces",
+            "meta": [],
+            "metaInformation": [],
+            "measures": {
+              "us": {
+                "amount": 12,
+                "unitShort": "oz",
+                "unitLong": "ounces"
+              },
+              "metric": {
+                "amount": 340.194,
+                "unitShort": "g",
+                "unitLong": "grams"
+              }
+            }
+          },
+          {
+            "id": 11206,
+            "aisle": "Produce",
+            "image": "cucumber.jpg",
+            "consitency": "solid",
+            "name": "cucumber",
+            "original": "1 medium cucumber, chopped",
+            "originalString": "1 medium cucumber, chopped",
+            "originalName": "cucumber, chopped",
+            "amount": 1,
+            "unit": "medium",
+            "meta": [
+              "chopped"
+            ],
+            "metaInformation": [
+              "chopped"
+            ],
+            "measures": {
+              "us": {
+                "amount": 1,
+                "unitShort": "medium",
+                "unitLong": "medium"
+              },
+              "metric": {
+                "amount": 1,
+                "unitShort": "medium",
+                "unitLong": "medium"
+              }
+            }
+          },
+          {
+            "id": 9266,
+            "aisle": "Produce",
+            "image": "pineapple.jpg",
+            "consitency": "solid",
+            "name": "pineapple",
+            "original": "1/2 cup cubed fresh pineapple",
+            "originalString": "1/2 cup cubed fresh pineapple",
+            "originalName": "cubed fresh pineapple",
+            "amount": 0.5,
+            "unit": "cup",
+            "meta": [
+              "fresh",
+              "cubed"
+            ],
+            "metaInformation": [
+              "fresh",
+              "cubed"
+            ],
+            "measures": {
+              "us": {
+                "amount": 0.5,
+                "unitShort": "cups",
+                "unitLong": "cups"
+              },
+              "metric": {
+                "amount": 118.294,
+                "unitShort": "ml",
+                "unitLong": "milliliters"
+              }
+            }
+          },
+          {
+            "id": 98952,
+            "aisle": "Condiments",
+            "image": "raspberry-vinaigrette.png",
+            "consitency": "liquid",
+            "name": "raspberry vinaigrette",
+            "original": "3/4 cup raspberry vinaigrette",
+            "originalString": "3/4 cup raspberry vinaigrette",
+            "originalName": "raspberry vinaigrette",
+            "amount": 0.75,
+            "unit": "cup",
+            "meta": [],
+            "metaInformation": [],
+            "measures": {
+              "us": {
+                "amount": 0.75,
+                "unitShort": "cups",
+                "unitLong": "cups"
+              },
+              "metric": {
+                "amount": 177.441,
+                "unitShort": "ml",
+                "unitLong": "milliliters"
+              }
+            }
+          },
+          {
+            "id": 10011282,
+            "aisle": "Produce",
+            "image": "red-onion.png",
+            "consitency": "solid",
+            "name": "red onion",
+            "original": "1 small red onion, thinly sliced and separated into rings",
+            "originalString": "1 small red onion, thinly sliced and separated into rings",
+            "originalName": "red onion, thinly sliced and separated into rings",
+            "amount": 1,
+            "unit": "small",
+            "meta": [
+              "red",
+              "separated",
+              "thinly sliced"
+            ],
+            "metaInformation": [
+              "red",
+              "separated",
+              "thinly sliced"
+            ],
+            "measures": {
+              "us": {
+                "amount": 1,
+                "unitShort": "small",
+                "unitLong": "small"
+              },
+              "metric": {
+                "amount": 1,
+                "unitShort": "small",
+                "unitLong": "small"
+              }
+            }
+          },
+          {
+            "id": 21052,
+            "aisle": "Produce",
+            "image": "mixed-greens-or-mesclun.jpg",
+            "consitency": "solid",
+            "name": "salad mix",
+            "original": "1 package (5 ounces) spring mix salad greens",
+            "originalString": "1 package (5 ounces) spring mix salad greens",
+            "originalName": "package spring mix salad greens",
+            "amount": 5,
+            "unit": "ounces",
+            "meta": [],
+            "metaInformation": [],
+            "measures": {
+              "us": {
+                "amount": 5,
+                "unitShort": "oz",
+                "unitLong": "ounces"
+              },
+              "metric": {
+                "amount": 141.748,
+                "unitShort": "g",
+                "unitLong": "grams"
+              }
+            }
+          },
+          {
+            "id": 9316,
+            "aisle": "Produce",
+            "image": "strawberries.png",
+            "consitency": "solid",
+            "name": "strawberries",
+            "original": "1 pint fresh strawberries, sliced",
+            "originalString": "1 pint fresh strawberries, sliced",
+            "originalName": "fresh strawberries, sliced",
+            "amount": 1,
+            "unit": "pint",
+            "meta": [
+              "fresh",
+              "sliced"
+            ],
+            "metaInformation": [
+              "fresh",
+              "sliced"
+            ],
+            "measures": {
+              "us": {
+                "amount": 1,
+                "unitShort": "pts",
+                "unitLong": "pint"
+              },
+              "metric": {
+                "amount": 1,
+                "unitShort": "pts",
+                "unitLong": "pint"
+              }
+            }
+          },
+          {
+            "id": 11529,
+            "aisle": "Produce",
+            "image": "tomato.png",
+            "consitency": "solid",
+            "name": "tomatoes",
+            "original": "2 medium tomatoes, seeded and chopped",
+            "originalString": "2 medium tomatoes, seeded and chopped",
+            "originalName": "tomatoes, seeded and chopped",
+            "amount": 2,
+            "unit": "medium",
+            "meta": [
+              "seeded",
+              "chopped"
+            ],
+            "metaInformation": [
+              "seeded",
+              "chopped"
+            ],
+            "measures": {
+              "us": {
+                "amount": 2,
+                "unitShort": "medium",
+                "unitLong": "mediums"
+              },
+              "metric": {
+                "amount": 2,
+                "unitShort": "medium",
+                "unitLong": "mediums"
               }
             }
           }
