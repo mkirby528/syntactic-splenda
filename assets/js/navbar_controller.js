@@ -23,6 +23,10 @@ $(document).ready(() => {
   
   });
 
+$("#logout-button").on('click',()=>{
+  document.cookie = "";
+  window.location.reload()
+})
 
 $("#search-button").on('click',()=>{
     window.location.href=`/search.html?q=${$("#search-box").val()}`;
@@ -57,3 +61,4 @@ $("#search-box").autocomplete({
     minLength: 3,
     delay: 200
   });
+
