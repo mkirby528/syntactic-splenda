@@ -81,6 +81,11 @@ hr {
   font-size: .85em;
   font-weight: bold;
 }
+
+.favorite-button.liked {
+  background-color: maroon;
+  color:white;
+}
 .card-content{
   flex:auto;
 }
