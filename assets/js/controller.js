@@ -1,3 +1,14 @@
+$(document).ready(() => {
+  let tokenStr = document.cookie;
+
+  axios
+    .get(
+      "http://localhost:3000/custom/recipes",
+      
+    )
+    .then(res => console.log(res))
+    .catch(err => console.log(err));
+});
 
 let handleFavoriteButton = async e => {
   let card_id = $(e.target)
@@ -50,6 +61,7 @@ let handleFavoriteButton = async e => {
         .catch(err => console.log(err));
     }
   } else {
+    window.location.href = "/login.html";
   }
 };
 
@@ -64,16 +76,17 @@ let handleViewButton = e => {
 $(document).on("click", ".favorite-button", handleFavoriteButton);
 $(document).on("click", ".view-button", handleViewButton);
 
-let makeRecipeCard =  async recipe => {
+let makeRecipeCard = async recipe => {
   let tokenStr = document.cookie;
   let likeStr = "";
-  let card = await axios
-    .get(`http://localhost:3000/user/fav/${recipe.id}`, {
-      headers: { Authorization: `Bearer ${tokenStr}` }
-    })
-    .then(res => {
-      likeStr = "liked";
-      return $(`
+  if (tokenStr) {
+    let card = await axios
+      .get(`http://localhost:3000/user/fav/${recipe.id}`, {
+        headers: { Authorization: `Bearer ${tokenStr}` }
+      })
+      .then(res => {
+        likeStr = "liked";
+        return $(`
        <div id="${recipe.id}-card" class="card">
        <div class="card-image">
          <figure class="image">
@@ -96,10 +109,10 @@ let makeRecipeCard =  async recipe => {
        </div>
       </div>
       `);
-    })
-    .catch(()=>{
-      likeStr = "";
-      return $(`
+      })
+      .catch(() => {
+        likeStr = "";
+        return $(`
        <div id="${recipe.id}-card" class="card">
        <div class="card-image">
          <figure class="image">
@@ -122,8 +135,31 @@ let makeRecipeCard =  async recipe => {
        </div>
       </div>
       `);
-    }
-    );
-
-  return card;
+      });
+    return card;
+  } else {
+    return $(`
+      <div id="${recipe.id}-card" class="card">
+      <div class="card-image">
+        <figure class="image">
+          <img src="https://spoonacular.com/recipeImages/${recipe.id}-240x150.jpg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content has-text-centered">
+            <p id="card-title" class="title is-4">${recipe.title}</p>
+            <hr class="is-marginless">
+          </div>
+        </div>
+    
+      </div>
+      <div class="card-footer columns is-centered has-text-centered">
+          <a id="${recipe.id}-favButton" class="favorite-button ${likeStr} button ">Add  Favorites</a>
+          <a class="view-button button is-info ">View Recipe</a>
+    </div>
+      </div>
+     </div>
+     `);
+  }
 };

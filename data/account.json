@@ -20,6 +20,20 @@
         "full_name": "ABC ",
         "email": "abc@email.com"
       }
+    },
+    "test": {
+      "passwordHash": "$2b$10$MKKBLy1B89gagQXdCqF6Nu3XllIRkxD44IIckHjzLG9MJu/3lzTCC",
+      "data": {
+        "full_name": "test",
+        "email": "test@test.com"
+      }
+    },
+    "matt": {
+      "passwordHash": "$2b$10$UX2TxiKWktW62oGnSfhVNuy8h5qsU7WQtas13URlAXAaMj0SgBN.C",
+      "data": {
+        "full_name": "dsadsa",
+        "email": "afssaf@adsad.com"
+      }
     }
   }
 }

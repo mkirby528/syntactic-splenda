@@ -1,0 +1,9 @@
+{
+  "recipes": {
+    "123": {
+      "id": 123,
+      "title": "food",
+      "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWtpcmJ5NTI4IiwiZGF0YSI6eyJmdWxsX25hbWUiOiJNYXR0aGV3IiwiZW1haWwiOiJta2lyYnk1MjhAdW5jLmVkdSJ9LCJpYXQiOjE1NzU1NzM1NjcsImV4cCI6MTU3ODE2NTU2N30.Vo8eq11_r02jX6hCHIsjOZH9kTCn1r8_E731lTy2Vu0"
+    }
+  }
+}
