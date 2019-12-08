@@ -13,49 +13,51 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
     />
-    <link 
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/search.css" />
-
   </head>
 
   <body id="root">
-      <nav
+    <nav
       id="navbar"
       class="navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"
-    >
-    
-    </nav>
+    ></nav>
     <div class="section">
-      
-        <div class="container">
-          <div  class="has-text-centered"><h1 class="title has-text" id="search-info">Favorites</h2></div>
-            <div id="favorites" class="card-grid"></div>
-          </div>
+      <div class="container">
+        <div class="content has-text-centered">
+          <h1 class="title has-text">User Created Recipes</h1>
+          <div id="search-results" class="card-grid">
+
         </div>
+      
       </div>
     </div>
+
     <!-- Include links to JavaScript files below -->
     <!-- TODO: Add link to jQuery here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-   
     <script src="/assets/js/secrets.js"></script>
     <script src="assets/js/navbar_controller.js" type="module"></script>
 
-    <script src="/assets/js/controller.js" ></script>
-    <script src="assets/js/favorites_controller.js" type="module"></script>
-
+    <script src="/assets/js/controller.js"></script>
+    <script src="assets/js/user_recipe_controller.js" type="module"></script>
   </body>
 </html>

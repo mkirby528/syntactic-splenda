@@ -10,7 +10,6 @@ body {
   --color4: #44bba4;
   --color5: #004e64;
   background-color: var(--color1);
-
 }
 
 
@@ -29,6 +28,21 @@ body {
 }
 
 
+
+.custom-card{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--color3);
+  margin: auto;
+  padding: 5px;
+  margin: 20px;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 5px solid var(--color5);
+  border-radius: 5%;
+}
 
 
 /* Dropdown Button */
@@ -95,7 +109,20 @@ hr {
   border-radius: 5px;
 }
 
-.card {
+
+.mySlides{
+  margin-top: 50px;
+display: none;
+}
+
+
+#user-rec-button{
+  background-color: var(--color1);
+  margin: auto;
+}
+
+
+.recipe-card {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -109,6 +136,7 @@ hr {
   border: 5px solid #d3d3d3;
   border-radius: 5%;
 }
+
 .card-footer{
   display: inline-block;
 

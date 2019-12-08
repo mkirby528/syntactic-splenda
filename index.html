@@ -6,72 +6,66 @@
 
     <title>Syntactic Splenda</title>
 
-    <!-- Include links to CSS stylesheets below -->
-    <!-- TODO (optional): Add link to bulma here -->
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
     />
-    <link 
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link
+      href="node_modules/bulma-carousel/dist/css/bulma-carousel.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/slideshow.css" />
+
   </head>
 
   <body id="root">
-
     <nav
+    id="navbar"
       class="navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"
     >
-      <div class="navbar-brand">
-        <a class="navbar-item has-text-weight-bold" href="/">
-          <i class="fa fa-utensils has-text-white" ></i>
-          <pre id="title">S Y N T A C T I C  S P L E N D A</pre>
-        </a>
-      </div>
-
-      <div class="search-field field has-addons">
-        <div class="search-control control">
-        
-          <input id="search-box" class="input" type="text" placeholder="Search for a recipe" />
-        </div>
-        <div class="control">
-          <a id="search-button" class="button is-info">
-            Search
-          </a>
-        </div>
-      </div>
-      <div id="user-info-div" class = "dropdown"> 
-        <i class="fas fa-user" ></i>
-        <p id="user-name-text"></p>
-        <div class="dropdown-content">
-            <a href="/favorites.html">Favorites</a>
-            <a id="logout-button">Logout</a>
-          </div>
-      </div>
+    
     </nav>
-    <div class="section">
-      <div class="container">
-        <div id="content-container" class="card-grid"></div>
-      </div>
-    </div>
-    <!-- Include links to JavaScript files below -->
-    <!-- TODO: Add link to jQuery here -->
+   <div class="container ">
+<!-- Slideshow container -->
+<div id="slideshow" class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    
+
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" >&#10094;</a>
+    <a class="next" >&#10095;</a>
+  </div>
+  
+  <!-- The dots/circles -->
+   </div>
+ 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-   
     <script src="/assets/js/secrets.js"></script>
     <script src="/assets/js/navbar_controller.js" type="module"></script>
+    <script src="/assets/js/index.js" type="module"></script>
 
     <script src="/assets/js/controller.js" type="module"></script>
   </body>

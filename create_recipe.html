@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Syntactic Splenda</title>
+
+    <!-- Include links to CSS stylesheets below -->
+    <!-- TODO (optional): Add link to bulma here -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/search.css" />
+  </head>
+
+  <body id="root">
+    <nav
+      id="navbar"
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    ></nav>
+    <div class="section">
+      <div class="container">
+        <div class="content has-text-centered">
+          <h1 class="title has-text">Create Recipe</h1>
+        </div>
+        <form id="form">
+          <div class="field">
+            <label class="label">Title</label>
+            <div class="control">
+              <input
+                class="input"
+                name="title"
+                type="text"
+                placeholder="e.g Pasta"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Description </label>
+            <div class="control">
+              <textarea
+                name="description"
+                class="textarea"
+                placeholder="e.g This is a very good dish! I got the recipe from my mom!"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Image URL</label>
+            <div class="control">
+              <input
+                class="input"
+                type="url"
+                name="image"
+                placeholder="e.g. https://dummyimage.com/556x370"
+              />
+            </div>
+          </div>
+
+          <label class="label">Ingredients</label>
+          <div class="ingredients">
+            <div
+              id="ingrediant-fields-1"
+              class="field is-grouped ingrediant-field"
+            >
+              <div class="control ">
+                <input
+                  class="input"
+                  name="name1"
+                  type="text"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="control">
+                <input
+                  class="input"
+                  name="amt1"
+                  type="text"
+                  placeholder="Amount"
+                />
+              </div>
+              <div class="select">
+                <select name="unit1">
+                  <option selected>Cups</option>
+                  <option>Tbsp</option>
+                  <option>Tsp</option>
+                  <option>Ounces</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="field is-grouped">
+            <button class="button add">Add Another Ingredient</button>
+            <button class="button remove">Remove Ingredient</button>
+          </div>
+          <br />
+          <div class="field">
+            <label class="label">Instructions</label>
+            <div class="control">
+              <textarea
+                name="instructions"
+                class="textarea"
+                placeholder="e.g 
+                1.Mix together 
+                2. Cook"
+              ></textarea>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input
+                type="submit"
+                value="Submit"
+                class="button is-link"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Include links to JavaScript files below -->
+    <!-- TODO: Add link to jQuery here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="/assets/js/secrets.js"></script>
+    <script src="assets/js/navbar_controller.js" type="module"></script>
+
+    <script src="/assets/js/controller.js"></script>
+    <script src="assets/js/create_recipe_controller.js" type="module"></script>
+  </body>
+</html>

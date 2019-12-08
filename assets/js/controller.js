@@ -1,20 +1,32 @@
-$(document).ready(() => {
+$(document).ready(async() => {
   let tokenStr = document.cookie;
+  // let username = await axios
+  //     .get("http://localhost:3000/account/status", {
+  //       headers: { Authorization: `Bearer ${tokenStr}` }
+  //     })
+  //     .then(res => {
+  //       return(res.data.user.name);
+  //     });
+  // axios.post(`http://localhost:3000/custom/recipes/`,{data:{123:{id:123,title:"food", author:username}}} ,{
+  //   headers: { Authorization: `Bearer ${tokenStr}` }
+  // })
+  //   .then(res => console.log(res))
+  //   .catch(err => console.log(err));
 
-  axios
-    .get(
-      "http://localhost:3000/custom/recipes",
-      
-    )
-    .then(res => console.log(res))
-    .catch(err => console.log(err));
+  // axios.delete(`http://localhost:3000/custom/recipes/123`, {
+  //   headers: { Authorization: `Bearer ${tokenStr}` }
+  // })
+  //   .then(res => console.log(res))
+  //   .catch(err => console.log(err));
+// axios.get("http://localhost:3000/custom/recipes/123").then(res=>console.log(res))
+
 });
-
 let handleFavoriteButton = async e => {
   let card_id = $(e.target)
-    .closest(".card")
+    .closest(".recipe-card")
     .attr("id");
   var id = card_id.split("-")[0];
+
   let tokenStr = document.cookie;
   if (tokenStr) {
     let liked = $(e.target).hasClass("liked");
@@ -27,8 +39,12 @@ let handleFavoriteButton = async e => {
     } else {
       $(e.target).addClass("liked");
       $(e.target).text("Remove Favorite");
+      let recipe;
+      if(id.substring(0,2)==="CR"){
+        recipe =  await axios.get(`http://localhost:3000/custom/recipes/${id}`).then(res=>{console.log(res); return res.data.result})
 
-      let recipe = await axios
+      }else{
+      recipe = await axios
         .get(
           `https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${id}/information`,
           {
@@ -43,6 +59,7 @@ let handleFavoriteButton = async e => {
         .then(res => {
           return res.data;
         });
+      }
       axios
         .post(
           `http://localhost:3000/user/fav/${id}`,
@@ -67,7 +84,7 @@ let handleFavoriteButton = async e => {
 
 let handleViewButton = e => {
   let card_id = $(e.target)
-    .closest(".card")
+    .closest(".recipe-card")
     .attr("id");
   var id = card_id.split("-")[0];
   window.location.href = `/recipe.html?id=${id}`;
@@ -79,7 +96,15 @@ $(document).on("click", ".view-button", handleViewButton);
 let makeRecipeCard = async recipe => {
   let tokenStr = document.cookie;
   let likeStr = "";
-  if (tokenStr) {
+  console.log(typeof recipe.id)
+  if (typeof recipe.id != 'string') {
+  recipe.image =`https://spoonacular.com/recipeImages/${recipe.id}-240x150.jpg`
+  }else{
+    if(recipe.image ==""){
+      recipe.image ="https://dummyimage.com/556x370/09094f/ffffff.png&text=Image+Not+Found+"
+    }
+  }
+    if (tokenStr) {
     let card = await axios
       .get(`http://localhost:3000/user/fav/${recipe.id}`, {
         headers: { Authorization: `Bearer ${tokenStr}` }
@@ -87,10 +112,10 @@ let makeRecipeCard = async recipe => {
       .then(res => {
         likeStr = "liked";
         return $(`
-       <div id="${recipe.id}-card" class="card">
+       <div id="${recipe.id}-card" class="recipe-card card">
        <div class="card-image">
          <figure class="image">
-           <img src="https://spoonacular.com/recipeImages/${recipe.id}-240x150.jpg" alt="Placeholder image">
+           <img src="${recipe.image}" alt="Placeholder image">
          </figure>
        </div>
        <div class="card-content">
@@ -113,10 +138,10 @@ let makeRecipeCard = async recipe => {
       .catch(() => {
         likeStr = "";
         return $(`
-       <div id="${recipe.id}-card" class="card">
+       <div id="${recipe.id}-card" class="recipe-card">
        <div class="card-image">
          <figure class="image">
-           <img src="https://spoonacular.com/recipeImages/${recipe.id}-240x150.jpg" alt="Placeholder image">
+           <img src="${recipe.image}" alt="Placeholder image">
          </figure>
        </div>
        <div class="card-content">
@@ -139,10 +164,10 @@ let makeRecipeCard = async recipe => {
     return card;
   } else {
     return $(`
-      <div id="${recipe.id}-card" class="card">
+      <div id="${recipe.id}-card" class="recipe-card">
       <div class="card-image">
         <figure class="image">
-          <img src="https://spoonacular.com/recipeImages/${recipe.id}-240x150.jpg" alt="Placeholder image">
+          <img src="${recipe.image}" alt="Placeholder image">
         </figure>
       </div>
       <div class="card-content">
