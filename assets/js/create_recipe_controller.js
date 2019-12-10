@@ -23,6 +23,8 @@ $(document).on("click", ".add", function(e) {
       <option>Tbsp</option>
       <option>Tsp</option>
       <option>Ounces</option>
+      <option>None</option>
+
     </select>
   </div>
 

@@ -41,6 +41,13 @@
         "full_name": "dsadsa",
         "email": "afssaf@adsad.com"
       }
+    },
+    "pizzadude123": {
+      "passwordHash": "$2b$10$4Py.aE.kjkN59HsWq2qnTuigNtoCefv8iufi78BamID5lL9CPYW.e",
+      "data": {
+        "full_name": "Pizza Man",
+        "email": "pizzaman@unc.edu"
+      }
     }
   }
 }
