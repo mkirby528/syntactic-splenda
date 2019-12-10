@@ -37,7 +37,7 @@ let makeCustomCard = async recipe => {
                <br>
                <p class="subtitle">Created by ${recipe.author}</p>
                <hr class="is-marginless">
-               <p>${recipe.description}</p>
+               <p class="description">${recipe.description}</p>
              </div>
            </div>
        
@@ -66,7 +66,7 @@ let makeCustomCard = async recipe => {
              <br>
              <p class="subtitle">Created by ${recipe.author}</p>
              <hr class="is-marginless">
-             <p>${recipe.description}</p>
+             <p class="description">${recipe.description}</p>
              </div>
            </div>
        
@@ -95,7 +95,7 @@ let makeCustomCard = async recipe => {
             <br>
             <p class="subtitle">Created by ${recipe.author}</p>
             <hr class="is-marginless">
-            <p>${recipe.description}</p>
+            <p class="description">${recipe.description}</p>
             </div>
           </div>
       

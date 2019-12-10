@@ -89,6 +89,56 @@
       "description": "\"This is a fantastic version of an Italian classic. The feta cheese adds a rich flavor that brings this dish to life. Incredibly easy and incredibly delicious!\"\r\n\r\n",
       "author": "pizzadude123",
       "id": "CR7bhj4"
+    },
+    "CRj07lfi": {
+      "ingredients": {
+        "Flour": {
+          "name": "Flour",
+          "amt": "1",
+          "unit": "Cups"
+        },
+        "Yeast": {
+          "name": "Yeast",
+          "amt": "1",
+          "unit": "Tsp"
+        },
+        "Salt": {
+          "name": "Salt",
+          "amt": "3/4",
+          "unit": "Tsp"
+        },
+        "Olive Oil": {
+          "name": "Olive Oil",
+          "amt": "3",
+          "unit": "Tbsp"
+        },
+        "Chicken": {
+          "name": "Chicken",
+          "amt": "2",
+          "unit": "Cups"
+        },
+        "Butter": {
+          "name": "Butter",
+          "amt": "2",
+          "unit": "Tbsp"
+        },
+        "Hot Sauce ": {
+          "name": "Hot Sauce ",
+          "amt": "1/2",
+          "unit": "Cups"
+        },
+        "Ranch ": {
+          "name": "Ranch ",
+          "amt": "1/4",
+          "unit": "Cups"
+        }
+      },
+      "instructions": "1. In a large bowl combine 1 3/4 cup flour, yeast, sugar, salt, water, and oil. Stir until smooth, adding more flour if necessary. Dough should be slightly sticky, but form a ball.\r<br /><br />2. On a lightly floured surface, knead the dough for 3-4 minutes until smooth and elastic. Alternately you can mix the dough ingredients in your stand mixer fitted with the dough hook attachment.\r<br /><br />3. Cover the bowl and allow the dough to rest for 10 minutes. Prepare toppings, while the dough is resting.\r<br /><br />4. In a large bowl combine the chicken, melted butter, and hot sauce until coated. Set aside.\r<br /><br />5. Preheat oven to 425°F.\r<br /><br />6.  When the dough is ready, spread it out 12-15 inches, depending on desired thickness onto a lightly greased pizza pan.\r<br /><br />7. Spread the ranch dressing evenly on top of the dough.\r<br /><br />8. Top evenly with prepared chicken, and sprinkle chicken with grated cheese.\r<br /><br />9. Bake for 12-15 minutes, or until the crust is golden brown and the cheese is melted.\r<br /> \r<br />10. Remove from oven and garnish with green onions and and drizzle with extra hot sauce if desired.\r<br /><br />11. Allow the pizza to rest for 5 minutes before slicing. Serve warm.\r<br />",
+      "title": "Buffalo Chicken Pizza",
+      "image": "https://cookiesandcups.com/wp-content/uploads/2018/12/buffalopizzaedit-3.jpg",
+      "description": "I grew up in a house where every Friday, without fail, was pizza night. Of course, as I’ve gotten older and started my own family, I can’t say that I am as religious about Pizza Friday as my mom was, but we do eat our fair share. Also, I live in an area where we don’t have a lot of pizza delivery options, so we make homemade pizza quite often instead of ordering out. Letting everyone get creative with their own toppings is really a fun part of the homemade pizza process!\r\n\r\n",
+      "author": "pizzadude123",
+      "id": "CRj07lfi"
     }
   }
 }
