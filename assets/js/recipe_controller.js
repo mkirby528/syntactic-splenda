@@ -2,7 +2,7 @@ $(document).ready(async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const id = urlParams.get("id");
   let tokenStr = document.cookie;
-  let likeStr
+  let likeStr,ingredients;
   if(!tokenStr){
     likeStr="";
   }
@@ -85,12 +85,15 @@ $(document).ready(async () => {
 
     var $ol = $('<ol>');
     if(id.substr(0,2) !="CR"){
-      for(let i = 0;i< recipe.analyzedInstructions[0].steps.length; i++){
+      for(let i = 0; i < recipe.extendedIngredients.length; i++){
+        $("#recipe-ingredients").append($(`<p>${recipe.extendedIngredients[i].originalString} </p>`))
+  
+      }      for(let i = 0;i< recipe.analyzedInstructions[0].steps.length; i++){
         var $li = $('<li>').text(recipe.analyzedInstructions[0].steps[i].step);
         $ol.append($li);
-    }
+      
+        }
     $('#recipe-instructions').append($ol);
-    
     for(let i = 0; i  < 3; i++){
       console.log(similar[i]);
       let card = await makeRecipeCard(similar[i]);
@@ -99,10 +102,18 @@ $(document).ready(async () => {
     }}
     else{
       $("#recipe-instructions").append($(`<p>${recipe.instructions}</p>`))
-
+      ingredients = recipe.ingredients;
       $("#similar-container").remove();
-    }
 
+      for (let key in recipe.ingredients){
+        if(recipe.ingredients.hasOwnProperty(key)){
+         $("#recipe-ingredients").append($(`<p>${recipe.ingredients[key].amt} ${recipe.ingredients[key].unit} of ${recipe.ingredients[key].name}  </p>`))
+
+        }
+     }
+     
+    }
+   
   
 });
 $(".main-favorite-button").on("click",async(e)=>{

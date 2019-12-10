@@ -203,6 +203,16 @@ border-radius: 2%;
   text-align: center;
   margin-bottom: 0px;
 }
+
+#recipe-ingredients{
+  column-count: 3;
+
+}
+#recipe-ingredients p{
+  break-inside: avoid;
+
+}
+
 /* Slideshow container */
 .description-home {
   background-color: whitesmoke;
