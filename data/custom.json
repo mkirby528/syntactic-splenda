@@ -1,23 +1,5 @@
 {
   "recipes": {
-    "CR0q0g5": {
-      "ingredients": {},
-      "instructions": "",
-      "title": "Test",
-      "image": "",
-      "description": "",
-      "author": "mkirby528",
-      "id": "CR0q0g5"
-    },
-    "CRd4k9z": {
-      "ingredients": {},
-      "instructions": "",
-      "title": "Test2",
-      "image": "",
-      "description": "",
-      "author": "mkirby528",
-      "id": "CRd4k9z"
-    },
     "CR1nq2f": {
       "ingredients": {
         "milk": {
@@ -37,6 +19,26 @@
       "description": "\"Christmas festivities left us with a ton of panettone and in need of some new ways to eat it. My grandpa requested French toast, so here is a new holiday twist on a delicious breakfast classic. Feel free to cut your panettone smaller before cooking if it is hard to manipulate. Serve warm with maple syrup, whipped cream, or any other topping.\"",
       "author": "mkirby528",
       "id": "CR1nq2f"
+    },
+    "CRjbn79k": {
+      "ingredients": {
+        "Milk": {
+          "name": "Milk",
+          "amt": "2",
+          "unit": "Cups"
+        },
+        "Other Things": {
+          "name": "Other Things",
+          "amt": "2",
+          "unit": "Tsp"
+        }
+      },
+      "instructions": "1. Mix \r<br />2. Cook",
+      "title": "Deep South Eggnog Cake",
+      "image": "https://images.media-allrecipes.com/userphotos/560x315/1082030.jpg",
+      "description": "You can really taste the eggnog in this lovely, rich, moist cake. No eggnog? No problem. You can make enough for the recipe in a jiffy. Nothing says Southern hospitality like this impressive cake. If you like, set aside and tint 1/4 cup of the frosting to your desired shade for decorating the top.\"\r\n",
+      "author": "mkirby528",
+      "id": "CRjbn79k"
     }
   }
 }

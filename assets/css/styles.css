@@ -1,22 +1,20 @@
+@font-face { font-family: roboto-regular; 
+  src: url('../font/Roboto-Regular.ttf'); } 
+
 html,
 body {
   width: 100%;
   height: 100%;
   scroll-behavior: smooth;
   padding-top: 10px;
-  --color1: #c6d4ff;
-  --color2: #8B575C;
+  --color1: lightskyblue;
+  --color2: #8b575c;
   --color3: #e7e5df;
   --color4: #44bba4;
   --color5: #004e64;
   background-color: var(--color1);
+	font-family: roboto-regular;
 }
-
-
-
-
-
-
 
 .navbar {
   max-height: 50px;
@@ -27,9 +25,7 @@ body {
   color: white;
 }
 
-
-
-.custom-card{
+.custom-card {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -44,27 +40,24 @@ body {
   border-radius: 5%;
 }
 
-
 /* Dropdown Button */
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
 }
 
-
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  
+
   top: 100%;
   background-color: #f1f1f1;
   min-width: 150px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -77,14 +70,19 @@ body {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 
 .search-field {
   max-width: 50%;
@@ -94,7 +92,8 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.search-control, .search-control > *{
+.search-control,
+.search-control > * {
   width: 100%;
 }
 hr {
@@ -110,17 +109,52 @@ hr {
 }
 
 
-.mySlides{
-  margin-top: 50px;
-display: none;
+.create-form{
+  background-color: whitesmoke;
+  padding: 15px;
+border-radius: 2%;
+}
+.label{
+  font-size: 24px;
 }
 
+#recipe-info-box,#search-info-div {
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* adjustment */
+  position: relative; /* new */
+  width: 100%;
+}
 
-#user-rec-button{
-  background-color: var(--color1);
+.itemcenter {
+  flex: 0 1 auto;
+  position: absolute; /* new */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.itemright {
+  flex: 0 1 auto;
   margin: auto;
+  margin-right: 0;
+  margin-top: 5px;
+  margin-bottom: auto;
+  margin-left: auto; /* new */
 }
+.mySlides {
+  margin-top: 50px;
+  display: none;
+}
+#search-info-div{
+  background-color: whitesmoke;
+  border-radius: 30px;
+  
+  }
 
+#user-rec-button {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 .recipe-card {
   display: flex;
@@ -137,67 +171,100 @@ display: none;
   border-radius: 5%;
 }
 
-.card-footer{
+.card-footer {
   display: inline-block;
 
-  border:none;
+  border: none;
   vertical-align: bottom;
   padding: 2px;
-  flex:auto;
-  margin:auto;
+  flex: auto;
+  margin: auto;
   width: 100%;
-  
 }
-.view-button, .favorite-button  {
+
+.view-button,
+.favorite-button,
+.main-favorite-button {
   width: 48%;
-  font-size: .85em;
+  font-size: 0.85em;
   font-weight: bold;
   white-space: normal;
   word-wrap: break-word;
-
 }
 
-.favorite-button.liked {
-  background-color: maroon;
+#welcome {
+  font-size: x-large;
+  width: 50%;
+  background-color: var(--color5);
+  color: white;
+  margin: auto;
+  
+  margin-top: 37px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+/* Slideshow container */
+.description-home {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 104.7%;
+  margin: auto;
   color:white;
+  text-align: center;
+  
+  position: relative;
+  top: -7px;
 }
-.card-content{
-  flex:auto;
+.description-home p{
+  font-size: larger;
+  margin: 0;
+  position: absolute;
+  top: 45%;
 }
-.recipe-page{
+#home-content {
+  margin: auto;
+}
+.favorite-button.liked,
+.main-favorite-button.liked {
+  background-color: maroon;
+  color: white;
+}
+.card-content {
+  flex: auto;
+}
+.recipe-page {
   background-color: whitesmoke;
 }
 
-.recipe-img{
+.recipe-img {
   margin: 15px auto;
   width: 80%;
 }
-.recipe-description-div{
+.recipe-description-div {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
 }
 
-.recipe-description{
+.recipe-description {
   vertical-align: middle;
   padding-right: 10%;
 }
-.card-footer > *{
+.card-footer > * {
   margin: 5px;
 }
-.card-grid{
-
+.card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 30%);
   justify-content: space-evenly;
   grid-auto-rows: auto;
 }
-  
-#card-title{
+
+#card-title {
   font-size: 1.2em;
   font-weight: bolder;
-  margin:0px;
+  margin: 0px;
 }
 .max-lines {
   display: -webkit-box;
@@ -224,14 +291,13 @@ display: none;
   margin-right: 5px;
 }
 
-#login-button{
+#login-button {
   background-color: var(--color2);
   height: 30px;
-  color:white;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 #title {

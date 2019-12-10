@@ -17,7 +17,7 @@ $(document).ready(() => {
         id: "login-button",
         text: "Login",
         click: function() {
-          window.location.href = "/login.html";
+          window.location.href = `login.html`;
         }
       })
     );
@@ -87,13 +87,15 @@ let renderNav = () => {
     </a>
   </div>
 </div>
-<a id="user-rec-button" class ="button navbar-item has-text has-text-weight-bold" style="text-decoration: underline;" href="userRecipies.html">User Created Recipes</a>
+<a id="user-rec-button" class ="button is-info navbar-item has-text "  href="userRecipies.html">User Created Recipes</a>
 
 <div id="user-info-div" class="dropdown">
   <i class="fas fa-user"></i>
   <p id="user-name-text"></p>
   <div class="dropdown-content">
     <a href="/favorites.html">Favorites</a>
+    <a href="/my_recipes.html">My Recipes </a>
+
     <a id="logout-button">Logout</a>
   </div>
 </div>`)

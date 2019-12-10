@@ -73,7 +73,8 @@ router.delete('/*',async(req, res,next)=>{
             if(userResource){
                 console.log('here')
             customStore.del(path);
-            }else{
+            res.status(204);
+        }else{
                 res.status(401).send({err: 'This resource does not belong to the logged in user.'})
 
             }

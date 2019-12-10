@@ -1,6 +1,9 @@
 
 $(document).ready(() => {
 
+  const urlParams = new URLSearchParams(window.location.search);
+  const n = urlParams.get("n");
+
   $("#create-form").on("submit",function(e) {
     e.preventDefault();
     let name = ($('#name').val());
@@ -19,7 +22,7 @@ $(document).ready(() => {
           }
     ).then(res=>{
       console.log(res);
-      window.location.href="/";
+      window.location.href="/login.html";
     }
     )
     
@@ -29,7 +32,8 @@ $(document).ready(() => {
 
   $("#login-form").on("submit",function(e) {
     e.preventDefault();
-    let username = ($('#username').val());
+
+        let username = ($('#username').val());
     let password = ($('#password').val());
     console.log(username,password);
     axios.post("http://localhost:3000/account/login",
@@ -40,8 +44,9 @@ $(document).ready(() => {
     ).then(res=>{
       console.log(res);
       document.cookie = res.data.jwt;
+      window.history.back();
 
-      window.location.href="/";
+      // window.location.href=`/`;
     }
     ).catch(err=>console.log(err));
     

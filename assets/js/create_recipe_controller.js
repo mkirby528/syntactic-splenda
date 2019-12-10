@@ -1,5 +1,10 @@
 
-$(document).ready(async () => {});
+$(document).ready( () => {
+  let tokenStr = document.cookie;
+  if(tokenStr==""){
+    window.location.href = "/login.html?n=/create_recipe.html"
+  }
+});
 let num_ings = 1;
 
 $(document).on("click", ".add", function(e) {
@@ -84,6 +89,7 @@ axios
     )
     .then(res => console.log(res))
     .catch(err => console.log(err));
+  window.location.href= "my_recipes.html"
 });
 
 

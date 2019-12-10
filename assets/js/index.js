@@ -9,7 +9,7 @@ $(document).ready(async () => {
       "x-rapidapi-key": CONFIG.API_KEY
     },
     params: {
-      number: "3"
+      number: "10"
     }
   })
     .then(response => {
@@ -35,7 +35,7 @@ $(document).ready(async () => {
     <div class="object-inner">
                <a class="button is-link slideshow-rec-button" href="recipe.html?id=${recipe.id}">View Recipe</a>
     <div class="object">
-    <div style="background-color:#004e64;" class="title has-text-centered has-text-white">Random Recipies </div>
+    <div style="background-color:#004e64;" class="subtitle has-text-centered has-text-white">Random Recipies </div>
     <img src="${recipe.image}" style="width:100%">
     <div class="text">${recipe.title}</div>
 

@@ -1,14 +1,10 @@
-body{--color1: #c6d4ff;
+body{--color1: lightskyblue;
 --color2: #8B575C;
 --color3: #e7e5df;
 --color4: #44bba4;
 --color5: #004e64;
 }
-#search-info-div{
-background-color: whitesmoke;
-border-radius: 30px;
 
-}
 
 #load-more-button{
     margin-top: 20px;

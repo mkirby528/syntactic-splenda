@@ -13,7 +13,7 @@ $(document).ready(async() => {
   //   .then(res => console.log(res))
   //   .catch(err => console.log(err));
 
-  // axios.delete(`http://localhost:3000/custom/recipes/123`, {
+  // axios.delete(`http://localhost:3000/custom/recipes/CR1nq2f`, {
   //   headers: { Authorization: `Bearer ${tokenStr}` }
   // })
   //   .then(res => console.log(res))

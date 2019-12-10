@@ -1,5 +1,12 @@
 {
   "users": {
+    "123456": {
+      "passwordHash": "$2b$10$EDpp2RaOGLBQLQB2DkvKhetoYDadhusjkHAX.Ptva97nSiF5GSSiW",
+      "data": {
+        "full_name": "654321",
+        "email": "Test@email.com"
+      }
+    },
     "mkirby528": {
       "passwordHash": "$2b$10$mOiF4qlQRTYhLOC6z7BR.uoWQRYRbJoQDiHfgpruwwKt.i4jsava2",
       "data": {
