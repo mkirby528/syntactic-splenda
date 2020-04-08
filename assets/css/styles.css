@@ -281,8 +281,7 @@ border-radius: 2%;
 }
 .card-footer > * {
   margin: 5px;
-  border: 2x solid purple;
-
+  
 }
 .card-grid {
   display: grid;

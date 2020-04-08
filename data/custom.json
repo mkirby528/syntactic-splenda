@@ -139,6 +139,26 @@
       "description": "I grew up in a house where every Friday, without fail, was pizza night. Of course, as I’ve gotten older and started my own family, I can’t say that I am as religious about Pizza Friday as my mom was, but we do eat our fair share. Also, I live in an area where we don’t have a lot of pizza delivery options, so we make homemade pizza quite often instead of ordering out. Letting everyone get creative with their own toppings is really a fun part of the homemade pizza process!\r\n\r\n",
       "author": "pizzadude123",
       "id": "CRj07lfi"
+    },
+    "CRa3hmh": {
+      "ingredients": {
+        "Milk": {
+          "name": "Milk",
+          "amt": "8",
+          "unit": "Ounces"
+        },
+        "Chocolate Syrup ": {
+          "name": "Chocolate Syrup ",
+          "amt": "2",
+          "unit": "Tbsp"
+        }
+      },
+      "instructions": "1. Pour Milk \r<br />2. Mix in syrup!",
+      "title": "Chocolate Milk",
+      "image": "https://bakingmischief.com/wp-content/uploads/2017/04/chocolate-milk-for-one-image-square.jpg",
+      "description": "This is really good!",
+      "author": "mkirby528",
+      "id": "CRa3hmh"
     }
   }
 }

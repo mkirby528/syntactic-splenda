@@ -48,6 +48,20 @@
         "full_name": "Pizza Man",
         "email": "pizzaman@unc.edu"
       }
+    },
+    "testuser": {
+      "passwordHash": "$2b$10$dxTuI.3ZdrXZqcVlSkdk8OYA93z6PsTHqL/x382T44wSuLvPj1k7O",
+      "data": {
+        "full_name": "Test",
+        "email": "testuser@email.com"
+      }
+    },
+    "test1": {
+      "passwordHash": "$2b$10$Qi3zj4mbJ7PuSXz7KlYvtOdx89rs1jTuYx40sEDqRuFw.QyIKK29W",
+      "data": {
+        "full_name": "test1",
+        "email": "test@unc.edu"
+      }
     }
   }
 }
